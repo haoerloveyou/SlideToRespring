@@ -1,0 +1,10 @@
+Package: com.cabralcole.slidetorespring
+Name: SlideToRespring
+Pre-Depends: firmware (>= 9.0)
+Depends: mobilesubstrate, preferenceloader
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Replace power off with respring.
+Maintainer: cabralcole
+Author: cabralcole
+Section: Tweaks
