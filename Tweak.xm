@@ -8,7 +8,7 @@
 @end
 
 @interface SpringBoard
-- (void)relaunchSpringBoard;
+- (void)_relaunchSpringBoardNow;
 @end
 
 NSString *const PREF_PATH = @"/var/mobile/Library/Preferences/com.cabralcole.slidetorespring.plist";
@@ -32,7 +32,7 @@ static BOOL tweakEnabled;
 - (void)powerDown
 {
 	if (tweakEnabled) {
-		[(SpringBoard *)[UIApplication sharedApplication] relaunchSpringBoard];
+		[(SpringBoard *)[UIApplication sharedApplication] _relaunchSpringBoardNow];
 	}
 	%orig;
 }
